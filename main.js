@@ -1,5 +1,3 @@
-'use strict'; // Para hacer que el código sea mas seguro.
-
 // Definimos las constantes que vamos a utilizar
 const videoFrame = document.getElementById('video_frame');
 const canvasFrame = document.getElementById('canvas_frame');
