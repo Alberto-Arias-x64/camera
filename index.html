@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Camera</title>
+</head>
+
+<body onload="init()">
+    <!-- Mensaje de error -->
+    <span name="errorMsg"></span>
+
+    <!-- Cargar el video de la webcam -->
+    <div id="video_wrap">
+        <div id="video_overlays">
+        </div>
+        <video id="video_frame" playsinline autoplay></video>
+    </div>
+
+    <!-- Capturamos la imagen a través de la API web y lo mostramos en el canvas -->
+    <div class="button_controller">
+        <button id="snap_frame" onclick="capture()">Capturar</button>
+        <br>
+        <canvas id="canvas_frame"></canvas>
+    </div>
+    <script src="main.js" async></script>
+</body>
+</html>
